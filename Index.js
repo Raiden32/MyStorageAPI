@@ -2,7 +2,8 @@ console.log("Server Running");
 
 const express = require("express");
 var app = express();
-var server = app.listen(3000,()=>{
+let port = process.env.PORT || 3000
+var server = app.listen(port,()=>{
     console.log("Listening at localhost:3000");
 });
 
